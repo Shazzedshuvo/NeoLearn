@@ -2,8 +2,10 @@
 
 "use client";
 
+import Link from 'next/link';
 import React from 'react';
 import { FaBookOpen, FaCode, FaCertificate, FaArrowRight, FaUsers, FaLaptopCode, FaStar } from 'react-icons/fa';
+
 
 // !!! --- ত্রুটি সৃষ্টিকারী লাইনটি মুছে দেওয়া হয়েছে --- !!!
 // import { PRIMARY_ACCENT, SECONDARY_ACCENT, DARK_BG, LIGHT_TEXT } from './auth/AuthLayout'; 
@@ -83,6 +85,7 @@ export const LearningHomePage = () => { // আপনার পূর্বের
                 </div>
 
             </section>
+      
 
             {/* 2. FEATURED COURSES SECTION */}
             <section className="py-20 bg-gray-950">
@@ -122,13 +125,13 @@ export const LearningHomePage = () => { // আপনার পূর্বের
                 </p>
 
                 {/* Secondary CTA */}
-                <button
+                <Link href="/courses"><button
                     className={`px-8 py-3 rounded-full text-lg font-bold transition-all duration-300 
                         bg-gray-700 text-[${PRIMARY_ACCENT}] border border-[${PRIMARY_ACCENT}] 
                         hover:bg-gray-600 hover:text-white`}
                 >
                     Explore All Courses
-                </button>
+                </button></Link>
             </section>
 
             {/* Footer Section (Minimalist Dark) */}

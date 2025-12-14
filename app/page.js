@@ -1,6 +1,6 @@
 
 import { LearningHomePage } from "./_Component/homep";
-import AuthPage from "./_Component/SingUp";
+
 
 
 
