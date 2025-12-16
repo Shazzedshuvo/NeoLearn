@@ -14,7 +14,7 @@ const LIGHT_TEXT = "text-gray-50";
 // PRIMARY_ACCENT = "#00BCD4"; // (Tailwind syntax এর জন্য সরাসরি ক্লাস ব্যবহার করা হলো)
 
 // আপনার API রুট
-const MENTOR_API_URL = "http://localhost:3005/api/mentor";
+const MENTOR_API_URL = "https://neolearnfull-backend-1.onrender.com/api/mentor";
 
 export default function MentorsPage() {
     const [allMentors, setAllMentors] = useState([]);

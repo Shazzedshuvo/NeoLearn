@@ -53,7 +53,7 @@ export default function CourseDetailsPage() {
     const [error, setError] = useState("");
     const [openCurriculumIndex, setOpenCurriculumIndex] = useState(null); // Accordion state
 
-    const sarvaUrl = "http://localhost:3005"; // আপনার সার্ভার ইউআরএল
+    const sarvaUrl = "https://neolearnfull-backend-1.onrender.com"; // আপনার সার্ভার ইউআরএল
 
     useEffect(() => {
         if (!slug) return;

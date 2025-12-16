@@ -32,7 +32,7 @@ export default function CoursesPage() {
     useEffect(() => {
         const fetchCourses = async () => {
             try {
-                const res = await axios.get("http://localhost:3005/api/course");
+                const res = await axios.get("https://neolearnfull-backend-1.onrender.com/api/course");
                 setAllCourses(res.data.data);
             } catch (error) {
                 console.error("Error fetching courses:", error);

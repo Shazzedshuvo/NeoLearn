@@ -56,14 +56,14 @@ const ProfileDropdown = ({ userName, handleLogout }) => {
                     </div>
 
                     {/* ড্যাশবোর্ড লিঙ্ক */}
+
                     <a
-                        href="/dashboard"
+                        href="/admin"
                         className={`flex items-center px-4 py-2 text-sm ${LIGHT_TEXT} hover:text-[${PRIMARY_ACCENT}] ${HOVER_BG}`}
                         role="menuitem"
                     >
-                        <FaTachometerAlt className="mr-3" /> Dashboard
+                        <FaTachometerAlt className="mr-3" /> Admin Dashboard
                     </a>
-
                     {/* লগ আউট বাটন */}
                     <button
                         onClick={handleLogout}

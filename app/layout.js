@@ -3,6 +3,7 @@ import "./globals.css";
 import { AuthContext } from "./Contaxtapi/AuthContext";
 import { NavBar } from "./_Component/NavBar";
 import { LargeFooter } from "./_Component/Fotter";
+import { DataProvider } from "./Contaxtapi/DataProvide";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +26,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       <AuthContext> <NavBar></NavBar> {children} <LargeFooter></LargeFooter></AuthContext>
+        <AuthContext>
+         
+          <NavBar></NavBar> <DataProvider> {children} </DataProvider> <LargeFooter></LargeFooter>
+        </AuthContext>
       </body>
     </html>
   );
