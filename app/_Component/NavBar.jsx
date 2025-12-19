@@ -21,10 +21,10 @@ const ACTIVE_RING = `focus:ring-[${PRIMARY_ACCENT}]`;
 
 // নেভিগেশন লিংক ডেটা
 const navLinks = [
-    { name: 'Home', href: '/', icon: FaBookOpen },
-    { name: 'Courses', href: '/courses', icon: FaCode },
-    { name: 'Events', href: '/events', icon: FaCalendarAlt },
-    { name: 'Mentors', href: '/mentors', icon: FaUserGraduate },
+    { name: 'Home', href: '/appa/', icon: FaBookOpen },
+    { name: 'Courses', href: '/appa/courses', icon: FaCode },
+    { name: 'Events', href: '/appa/events', icon: FaCalendarAlt },
+    { name: 'Mentors', href: '/appa/mentors', icon: FaUserGraduate },
 ];
 
 // --- Profile Dropdown Component ---

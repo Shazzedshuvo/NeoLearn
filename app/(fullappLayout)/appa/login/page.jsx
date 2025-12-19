@@ -51,7 +51,7 @@ export default function LoginPage() {
       setSuccess("Login successful! Redirecting...");
 
       setTimeout(() => {
-        router.push("/appa"); // Change to your home/dashboard route
+        router.push("/dashbord"); // Change to your home/dashboard route
       }, 1500);
     } catch (err) {
       setError(err.response?.data?.message || "Invalid email or password");
